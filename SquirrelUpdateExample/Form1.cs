@@ -22,8 +22,7 @@ namespace SquirrelUpdateExample
         {
             try
             {
-                //var repoUrl = "https://github.com/DeryaginAlex/SquirrelTest";
-                var repoUrl = "https://github.com/meJevin/WPFFrameworkTest";
+                var repoUrl = "https://github.com/DeryaginAlex/SquirrelUpdateExample";
 
                 using (var updateManager = await UpdateManager.GitHubUpdateManager(repoUrl))
                 {
