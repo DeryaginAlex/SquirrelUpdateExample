@@ -26,7 +26,7 @@ NuGet.CommandLine
     <Output TaskParameter="Assemblies" ItemName="assemblyInfo" />
   </GetAssemblyIdentity>
   <PropertyGroup>
-    <Version>$([System.Version]::Parse(%(assemblyInfo.Version)).ToString(3))</Version>
+    <Version>$([System.Version]::Parse(%(assemblyInfo.Version)).ToString(4))</Version>
     <NuspecFile>$(SolutionDir)SquirrelUpdateExample\ReleaseSpec.nuspec</NuspecFile>
   </PropertyGroup>
   <XmlPeek XmlInputPath="$(NuspecFile)" Query="/package/metadata/id/text()">

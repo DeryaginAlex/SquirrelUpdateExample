@@ -1,20 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
-<package >
+<?xml version="1.0"?>
+<package>
   <metadata>
-    <id>SquirrelUpdateExample</id>
-    <version>0.0.0</version>
-    <title>title</title>
-    <authors>author</authors>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <license type="expression">MIT</license>
-    <!-- <icon>icon.png</icon> -->
-    <projectUrl>http://project_url_here_or_delete_this_line/</projectUrl>
-    <description>description</description>
-    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
-    <copyright>copyright</copyright>
-    <tags>Tag1 Tag2</tags>
+    <id>MyApp</id>
+    <version>1.0.0.7</version>
+    <title>MyApp</title>
+    <authors>YourName</authors>
+    <owners>YourName</owners>
+    <description>MyApp Description</description>
   </metadata>
   <files>
-	<file src="bin\Releases\*" target="lib\net45"/>
+    <file src="bin\Release\*.*" target="lib\net45" />
   </files>
 </package>
