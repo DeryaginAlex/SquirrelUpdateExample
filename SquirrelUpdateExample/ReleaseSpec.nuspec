@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <package>
   <metadata>
-    <id>MyApp</id>
-    <version>1.0.0.7</version>
-    <title>MyApp</title>
-    <authors>YourName</authors>
-    <owners>YourName</owners>
-    <description>MyApp Description</description>
+    <id>SquirrelUpdateExample</id>
+    <version>0.0.0.0</version>
+    <title>SquirrelUpdateExample</title>
+    <authors>Alder</authors>
+    <owners>Alder</owners>
+    <description>Description</description>
   </metadata>
   <files>
     <file src="bin\Release\*.*" target="lib\net45" />

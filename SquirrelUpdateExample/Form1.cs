@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
 using System.Reflection;
 using System.Windows.Forms;
 using Squirrel;
@@ -18,24 +17,18 @@ namespace SquirrelUpdateExample
         /// <summary>
         /// Проверяем есть ли обновление
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private async void button1_Click(object sender, EventArgs e)
+        private async void updateButton_Click(object sender, EventArgs e)
         {
             try
             {
                 using (var updateManager = await UpdateManager.GitHubUpdateManager(RepoUrl))
                 {
-                    // Проверка наличия обновлений
                     var updateInfo = await updateManager.CheckForUpdate();
                 
                     if (updateInfo.ReleasesToApply.Count > 0)
                     {
-                        // Если есть обновления, скачиваем и устанавливаем их
                         MessageBox.Show("Обновление найдено! Устанавливаем...", "Обновление", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         await updateManager.UpdateApp();
-
-                        // Перезапуск приложения после обновления
                         MessageBox.Show("Приложение будет перезапущено для применения обновления.", "Обновление", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         UpdateManager.RestartApp();
                     }
@@ -55,7 +48,8 @@ namespace SquirrelUpdateExample
         {
             Assembly assembly = Assembly.GetExecutingAssembly();
             Version version = assembly.GetName().Version;
-            label3.Text = version.ToString();
+            VersionValueLabel.Text = version.ToString();
         }
+
     }
 }

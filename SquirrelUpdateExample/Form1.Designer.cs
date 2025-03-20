@@ -29,47 +29,47 @@ namespace SquirrelUpdateExample
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.updateButton = new System.Windows.Forms.Button();
+            this.VersionKeyLabel = new System.Windows.Forms.Label();
+            this.VersionValueLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // updateButton
             // 
-            this.button1.Location = new System.Drawing.Point(28, 118);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 45);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Check for Updates";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.updateButton.Location = new System.Drawing.Point(28, 118);
+            this.updateButton.Name = "updateButton";
+            this.updateButton.Size = new System.Drawing.Size(173, 45);
+            this.updateButton.TabIndex = 0;
+            this.updateButton.Text = "Check for Updates";
+            this.updateButton.UseVisualStyleBackColor = true;
+            this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
             // 
-            // label2
+            // VersionKeyLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(47, 60);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Current Version:";
+            this.VersionKeyLabel.AutoSize = true;
+            this.VersionKeyLabel.Location = new System.Drawing.Point(47, 60);
+            this.VersionKeyLabel.Name = "VersionKeyLabel";
+            this.VersionKeyLabel.Size = new System.Drawing.Size(82, 13);
+            this.VersionKeyLabel.TabIndex = 2;
+            this.VersionKeyLabel.Text = "Current Version:";
             // 
-            // label3
+            // VersionValueLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(135, 60);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "0.0.0.0";
+            this.VersionValueLabel.AutoSize = true;
+            this.VersionValueLabel.Location = new System.Drawing.Point(135, 60);
+            this.VersionValueLabel.Name = "VersionValueLabel";
+            this.VersionValueLabel.Size = new System.Drawing.Size(31, 13);
+            this.VersionValueLabel.TabIndex = 3;
+            this.VersionValueLabel.Text = "0.0.0";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(240, 206);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.VersionValueLabel);
+            this.Controls.Add(this.VersionKeyLabel);
+            this.Controls.Add(this.updateButton);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -80,9 +80,9 @@ namespace SquirrelUpdateExample
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button updateButton;
+        private System.Windows.Forms.Label VersionKeyLabel;
+        private System.Windows.Forms.Label VersionValueLabel;
     }
 }
 
