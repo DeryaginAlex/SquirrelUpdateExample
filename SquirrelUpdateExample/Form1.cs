@@ -23,6 +23,7 @@ namespace SquirrelUpdateExample
             {
                 using (var updateManager = await UpdateManager.GitHubUpdateManager(RepoUrl))
                 {
+                    //test
                     var updateInfo = await updateManager.CheckForUpdate();
                 
                     if (updateInfo.ReleasesToApply.Count > 0)
